@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>The World of Fruit</title>
+  </head>
+  <body align="center" style="background-color: #fffe9a">
+    <h1 style="background-color: #fecb00">The World of Fruit</h1>
+    <h2 color>Fruit Survey</h2>
+    <form>
+      <table align="center">
+        <tr>
+          <td align="right">Name &nbsp;&nbsp;&nbsp;</td>
+          <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+          <td align="right">Address &nbsp;&nbsp;&nbsp;</td>
+          <td><input type="text" name="address" /></td>
+        </tr>
+        <tr>
+          <td align="right">Email&nbsp;&nbsp;&nbsp;</td>
+          <td><input type="text" name="email" /></td>
+        </tr>
+        <tr>
+          <td align="right">
+            How many pieces of fruit <br />do you eat per day?
+            &nbsp;&nbsp;&nbsp;
+          </td>
+
+          <td>
+            <input type="radio" name="amount_of_fruit" value="0" />
+            <label for="0">0</label> <br />
+            <input type="radio" name="amount_of_fruit" value="1" />
+            <label for="1">1</label> <br />
+            <input type="radio" name="amount_of_fruit" value="2" />
+            <label for="2">2</label> <br />
+            <input type="radio" name="amount_of_fruit" value="More than 2" />
+            <label for="More than 2">More than 2</label>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">My Favourity fruit &nbsp;&nbsp;&nbsp;</td>
+          <td colspan="10">
+            <select name="fav-fruit" multiple="multiple" size="4">
+              <option value="apple">Apple</option>
+              <option value="banana">Banana</option>
+              <option value="plum">Plum</option>
+              <option value="pomegranate">Pomegranates</option>
+              <option value="dragon-fruit">Dragon Fruit</option>
+              <option value="orange">Orange</option>
+              <option value="water-melon">Water Melon</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            Woould you like a <br />brochure? &nbsp;&nbsp;&nbsp;
+          </td>
+          <td><input type="checkbox" name="brochure" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center"><input type="submit" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
