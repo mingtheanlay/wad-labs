@@ -1,0 +1,54 @@
+:root {
+  font-size: 12px;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+header {
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  float: right;
+}
+
+h1,
+h2,
+h3 {
+  text-decoration: underline;
+  text-shadow: 2px 2px greenyellow;
+}
+
+header p {
+  font-style: italic;
+  text-shadow: 2px 2px yellow;
+}
+
+section article {
+  border: 1px solid black;
+}
+
+#introduction article {
+  background-color: palegreen;
+}
+
+#history article {
+  text-transform: uppercase;
+  background-color: yellow;
+  font-style: italic;
+}
+
+footer,
+article p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+footer {
+  width: 50%;
+  text-align: center;
+  margin: 75px auto 50px auto;
+  border: 1px solid black;
+}

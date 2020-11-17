@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <style>
+      body {
+        background-color: bisque;
+      }
+      #browser-support article p {
+        color: white;
+      }
+      #syntax p {
+        font-style: italic;
+      }
+      h1,
+      h2 {
+        background-color: aquamarine;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1
+        style="
+          background-color: darkslateblue;
+          color: white;
+          text-decoration: none;
+          text-shadow: none;
+        "
+      >
+        CSS
+      </h1>
+      <p>From Wikipedia, the free encyclopedia</p>
+    </header>
+
+    <section>
+      <header>
+        <h2>About CSS</h2>
+        <p>
+          For other uses, see CSS (disambiguation). "Pseudo-element" redirects
+          here. For pseudoelement symbols in chemistry, see Skeletal formula §
+          Pseudoelement symbols. For the use of CSS on Wikipedia, see
+          Help:Cascading Style Sheets.
+        </p>
+      </header>
+
+      <article style="background-color: khaki">
+        <header><h3>Introduction</h3></header>
+        <img src="./img/1280px-CSS3_logo_and_wordmark.svg.png" alt="" />
+        <p>
+          For other uses, see CSS (disambiguation). "Pseudo-element" redirects
+          here. For pseudoelement symbols in chemistry, see Skeletal formula §
+          Pseudoelement symbols. For the use of CSS on Wikipedia, see
+          Help:Cascading Style Sheets.
+        </p>
+        <p>
+          CSS is designed to enable the separation of presentation and content,
+          including layout, colors, and fonts.[3] This separation can improve
+          content accessibility, provide more flexibility and control in the
+          specification of presentation characteristics, enable multiple web
+          pages to share formatting by specifying the relevant CSS in a separate
+          .css file which reduces complexity and repetition in the structural
+          content as well as enabling the .css file to be cached to improve the
+          page load speed between the pages that share the file and its
+          formatting.
+        </p>
+        <p>
+          Separation of formatting and content also makes it feasible to present
+          the same markup page in different styles for different rendering
+          methods, such as on-screen, in print, by voice (via speech-based
+          browser or screen reader), and on Braille-based tactile devices. CSS
+          also has rules for alternate formatting if the content is accessed on
+          a mobile device.[4]
+        </p>
+        <p>
+          The name cascading comes from the specified priority scheme to
+          determine which style rule applies if more than one rule matches a
+          particular element. This cascading priority scheme is predictable.
+        </p>
+        <p>
+          The CSS specifications are maintained by the World Wide Web Consortium
+          (W3C). Internet media type (MIME type) text/css is registered for use
+          with CSS by RFC 2318 (March 1998). The W3C operates a free CSS
+          validation service for CSS documents.[5]
+        </p>
+      </article>
+      <article id="syntax">
+        <header style="text-align: left; font-style: italic">
+          <h3>Syntax</h3>
+        </header>
+        <p>
+          CSS has a simple syntax and uses a number of English keywords to
+          specify the names of various style properties. A style sheet consists
+          of a list of rules. Each rule or rule-set consists of one or more
+          selectors, and a declaration block.
+        </p>
+      </article>
+    </section>
+
+    <section id="browser-support">
+      <header>
+        <h2>Browser support</h2>
+        <p>
+          Further information: Comparison of web browser engines (CSS support)
+        </p>
+      </header>
+      <article style="background-color: mediumpurple">
+        <p>
+          Each web browser uses a layout engine to render web pages, and support
+          for CSS functionality is not consistent between them. Because browsers
+          do not parse CSS perfectly, multiple coding techniques have been
+          developed to target specific browsers with workarounds (commonly known
+          as CSS hacks or CSS filters). Adoption of new functionality in CSS can
+          be hindered by lack of support in major browsers. For example,
+          Internet Explorer was slow to add support for many CSS 3 features,
+          which slowed adoption of those features and damaged the browser's
+          reputation among developers.[60] In order to ensure a consistent
+          experience for their users, web developers often test their sites
+          across multiple operating systems, browsers, and browser versions,
+          increasing development time and complexity. Tools such as BrowserStack
+          have been built to reduce the complexity of maintaining these
+          environments.
+        </p>
+        <p>
+          In addition to these testing tools, many sites maintain lists of
+          browser support for specific CSS properties, including CanIUse and the
+          Mozilla Developer Network. Additionally, the CSS 3 defines feature
+          queries, which provide an @supports directive that will allow
+          developers to target browsers with support for certain functionality
+          directly within their CSS.[61] CSS that is not supported by older
+          browsers can also sometimes be patched in using JavaScript polyfills,
+          which are pieces of JavaScript code designed to make browsers behave
+          consistently. These workarounds—and the need to support fallback
+          functionality—can add complexity to development projects, and
+          consequently, companies frequently define a list of browser versions
+          that they will and will not support.
+        </p>
+        <p>
+          As websites adopt newer code standards that are incompatible with
+          older browsers, these browsers can be cut off from accessing many of
+          the resources on the web (sometimes intentionally).[62] Many of the
+          most popular sites on the internet are not just visually degraded on
+          older browsers due to poor CSS support, but do not work at all, in
+          large part due to the evolution of JavaScript and other web
+          technologies.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>
+        Copyright 2020 <br />
+        All right reserved to Wikipedia CSS <br />
+        Author: Lay Mingthean
+      </p>
+      <address style="font-style: normal">
+        You can contact us at:<br />
+        <a href="mailto: mingthean.lay@gmail.com">mingthean.lay@gmail.com</a>
+        <br />
+        123 Somewhere St.<br />
+        City, State
+      </address>
+      <br />
+    </footer>
+  </body>
+</html>
