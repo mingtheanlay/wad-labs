@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+.red-header {
+  background-color: #f57c7c;
+}
+
+header h2 {
+  color: white;
+  background-color: red;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+}
+
+#rupp-article {
+  background-image: url(./img/RUPP_logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto;
+}
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#initial-background-origin {
+  border: dotted 10px black;
+  padding: 25px;
+  background: url(./img/bg.jpg);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-origin: initial;
+}
+
+#inherit-background-origin {
+  border: dotted 10px black;
+  padding: 25px;
+  background: url(./img/bg.jpeg);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-origin: inherit;
+}
+
+#contentbox-background-origin {
+  border: dotted 10px black;
+  padding: 25px;
+  background: url(./img/bg.jpeg);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-origin: content-box;
+}
+
+#paddingbox-background-origin {
+  border: dotted 10px black;
+  padding: 25px;
+  background: url(./img/bg.jpeg);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-origin: padding-box;
+}
+
+#borderbox-background-origin {
+  border: dotted 10px black;
+  padding: 25px;
+  background: url(./img/bg.jpeg);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-origin: border-box;
+}
+
+.multiple {
+  width: 100%;
+  height: 1000px;
+  background-image: url(./img/field.png), url(./img/cow.png),
+    url(./img/tree.png), url(./img/apple1.png), url(./img/apple2.png),
+    url(./img/apple3.png), url(./img/apple4.png), url(./img/apple5.png),
+    url(./img/sleeping.png);
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, local;
+  background-blend-mode: overlay;
+}
