@@ -1,6 +1,0 @@
-Lab 14 - Style and font (Create one page of HTML)
-    - Create website with learned Style
-    - Use standard fonts
-    - Use non-standard fonts
-        * Download and embeb fonts
-        * Use Google Fonts
