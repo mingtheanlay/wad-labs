@@ -1,0 +1,66 @@
+body {
+  font-size: 1.3rem;
+  background-image: url(./img/font-21.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: "air_americaregular";
+  src: url("./font/airamerica-regular-webfont.woff2") format("woff2"),
+    url("./font/airamerica-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  word-spacing: 7px;
+  line-height: 1.3;
+  text-indent: 50px;
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+  font-size: 50px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-family: "air_americaregular";
+  text-shadow: 2px 2px 6px greenyellow;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header p {
+  text-transform: capitalize;
+  text-align: right;
+  font-style: italic;
+  margin-top: 1px;
+  line-height: 1.5;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+article.content {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 30px;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+}
+
+article.content,
+footer,
+header p {
+  background-color: cornflowerblue;
+}
+
+footer {
+  margin-bottom: 30px;
+}
