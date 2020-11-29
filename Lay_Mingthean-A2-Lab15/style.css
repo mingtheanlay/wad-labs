@@ -1,0 +1,235 @@
+body {
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  background-color: darksalmon;
+}
+
+h1 {
+  margin: 50px auto;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  margin-right: 25px;
+  margin-left: 25px;
+  border: 2px white solid;
+  padding: 10px;
+  text-decoration: none;
+}
+
+div {
+  margin-bottom: 30px;
+}
+
+#link-1 a:link {
+  background-color: aquamarine;
+  color: black;
+}
+
+#link-1 a:hover {
+  background-color: yellow;
+  border: 2px black solid;
+}
+
+#link-1 a:visited {
+  color: white;
+  background-color: gray;
+}
+
+#link-1 a:active {
+  text-shadow: 2px 2px 2px gray;
+  box-shadow: 2px 2px 2px gray;
+}
+
+#link-2 a:link {
+  background-color: blueviolet;
+  color: white;
+}
+
+#link-2 a:hover {
+  background-color: cornflowerblue;
+  box-shadow: 2px 2px 2px blueviolet;
+  border-left: 2px red solid;
+}
+
+#link-2 a:visited {
+  color: white;
+  background-color: black;
+}
+
+#link-2 a:active {
+  background-color: aqua;
+}
+
+#link-3 a:link {
+  background-color: rgb(7, 104, 39);
+  color: white;
+}
+
+#link-3 a:hover {
+  background-color: rgb(5, 77, 37);
+  color: black;
+}
+
+#link-3 a:visited {
+  background-color: rgb(223, 125, 14);
+  color: black;
+}
+
+#link-3 a:active {
+  background-color: rgb(243, 13, 193);
+  color: black;
+}
+
+#link-4 a:link {
+  background-color: rgb(203, 219, 146);
+  color: black;
+}
+
+#link-4 a:hover {
+  background-color: rgb(140, 189, 27);
+  color: black;
+}
+
+#link-4 a:visited {
+  background-color: rgb(88, 7, 4);
+  color: white;
+}
+
+#link-4 a:active {
+  background-color: rgb(13, 178, 243);
+  color: red;
+}
+
+#link-5 a:link {
+  background-color: rgb(74, 23, 194);
+  color: rgb(233, 233, 233);
+}
+
+#link-5 a:hover {
+  background-color: rgb(220, 223, 84);
+  color: black;
+  border: 2px solid black;
+}
+
+#link-5 a:visited {
+  background-color: rgb(97, 97, 100);
+  color: rgb(0, 0, 0);
+}
+
+#link-5 a:active {
+  background-color: rgb(13, 243, 155);
+  color: rgb(15, 15, 15);
+}
+
+#link-6 a:link {
+  background-color: rgb(208, 223, 126);
+  color: rgb(55, 100, 70);
+}
+
+#link-6 a:hover {
+  background-color: rgb(170, 19, 120);
+  color: rgb(255, 255, 255);
+  border: 2px solid black;
+}
+
+#link-6 a:visited {
+  background-color: rgb(5, 5, 117);
+  color: rgb(58, 14, 255);
+}
+
+#link-6 a:active {
+  background-color: rgb(129, 8, 8);
+  color: rgb(243, 103, 103);
+}
+
+#link-7 a:link {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
+}
+
+#link-7 a:hover {
+  background-color: rgb(19, 170, 95);
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+}
+
+#link-7 a:visited {
+  background-color: rgb(100, 117, 5);
+  color: rgb(228, 255, 110);
+}
+
+#link-7 a:active {
+  background-color: rgb(81, 8, 129);
+  color: rgb(117, 103, 243);
+}
+
+#link-8 a:link {
+  background-color: rgb(124, 124, 124);
+  color: rgb(88, 196, 129);
+}
+
+#link-8 a:hover {
+  background-color: rgb(236, 101, 203);
+  color: rgb(199, 67, 67);
+  border: 2px solid black;
+}
+
+#link-8 a:visited {
+  background-color: rgb(202, 100, 16);
+  color: rgb(247, 247, 247);
+}
+
+#link-8 a:active {
+  background-color: rgb(224, 221, 13);
+  color: rgb(117, 103, 243);
+}
+
+#link-9 a:link {
+  background-color: rgb(43, 161, 58);
+  color: rgb(5, 85, 36);
+}
+
+#link-9 a:hover {
+  background-color: rgb(236, 101, 101);
+  color: rgb(199, 67, 67);
+  border: 2px solid black;
+}
+
+#link-9 a:visited {
+  background-color: rgb(66, 16, 202);
+  color: rgb(190, 43, 43);
+}
+
+#link-9 a:active {
+  background-color: rgb(13, 217, 224);
+  color: rgb(87, 81, 143);
+}
+
+#link-10 a:link {
+  background-color: rgb(0, 0, 0);
+  color: rgb(238, 202, 1);
+}
+
+#link-10 a:hover {
+  background-color: rgb(97, 96, 96);
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+}
+
+#link-10 a:visited {
+  background-color: rgb(25, 185, 185);
+  color: rgb(255, 0, 0);
+}
+
+#link-10 a:active {
+  background-color: rgb(13, 224, 13);
+  color: rgb(255, 255, 255);
+}
