@@ -1,0 +1,52 @@
+:root {
+  font-size: 1.3rem;
+  background-color: bisque;
+}
+
+body {
+  font-family: "Texturina", serif;
+  margin: 0;
+}
+
+p {
+  text-indent: 50px;
+}
+
+header h1,
+header p {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+header p {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.img-right {
+  width: 300px;
+  float: right;
+  padding: 0 20px;
+}
+
+.img-left {
+  width: 400px;
+  float: left;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+#container {
+  border: 60px solid black;
+  border-image: url(./img/kbach-khmer.png) 40 round;
+  padding: 50px;
+}
+
+li {
+  list-style: none;
+  list-style-image: url(./img/kbachkhmer-ul.png);
+  background-size: 8px 8px;
+  padding: 5px;
+}
