@@ -1,0 +1,138 @@
+:root {
+  font-size: 1.1rem;
+}
+
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 60%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 5px solid #0d1110;
+}
+
+tr {
+  border: 1px solid #929291;
+  height: 40px;
+}
+
+td {
+  padding: 0 10px;
+}
+
+#header td {
+  background-color: #3b3b3a;
+  color: #e4e3e4;
+}
+
+#country {
+  font-weight: bold;
+}
+
+#country,
+#league {
+  text-decoration: underline;
+}
+
+#header #date {
+  font-weight: normal;
+  text-align: right;
+  text-decoration: none;
+}
+
+.duration {
+  width: 100px;
+}
+
+.home {
+  text-align: right;
+  width: 300px;
+}
+
+.score {
+  text-align: center;
+  color: blue;
+}
+
+.away {
+  text-align: left;
+}
+
+table tr:nth-child(2),
+table tr:nth-child(4) {
+  background-color: #c7c7c7;
+}
+
+#quote,
+#poster {
+  margin: 50px auto;
+}
+
+#quote article {
+  background-image: url(./img/boat.png);
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: black solid 20px;
+}
+
+#quote article p {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 65px;
+  font-size: 28px;
+}
+
+#cite {
+  font-style: italic;
+}
+
+#poster {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+#poster section {
+  background-image: url(./img/poster-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 900px;
+  margin: 0 auto;
+  box-shadow: gray 5px 5px 5px 5px;
+}
+
+#poster section article {
+  background-color: rgba(255, 255, 255, 0.6);
+  float: right;
+  width: 50%;
+  margin: 50px 0;
+  padding: 0 15px;
+  font-size: 15px;
+}
+
+article h2 {
+  text-indent: 20px;
+}
+
+.posted,
+.timestamp {
+  color: red;
+  text-shadow: 1px 1px 1px black;
+}
+
+#poster section img {
+  width: 35%;
+  margin: 50px 40px;
+  border: rgba(255, 255, 255, 0.6) 10px solid;
+  box-shadow: gray 3px 3px 3px 3px;
+  opacity: 0.85;
+}
