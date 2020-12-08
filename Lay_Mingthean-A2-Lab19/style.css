@@ -1,0 +1,65 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container {
+  display: inline-block;
+  width: 164px;
+  height: 125px;
+  margin: 25px;
+}
+
+h1 {
+  font-size: 64px;
+  width: 70%;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#youtube {
+  background: url(./img/ico.png) -26px -10px;
+}
+
+#website {
+  background: url(./img/ico.png) -205px -10px;
+}
+
+#gmail {
+  background: url(./img/ico.png) -387px -5px;
+}
+
+#twitter {
+  background: url(./img/ico.png) -570px -5px;
+}
+
+#facebook {
+  background: url(./img/ico.png) -750px -5px;
+}
+
+#linkedin {
+  background: url(./img/ico.png) -26px -145px;
+}
+
+#telegram {
+  background: url(./img/ico.png) -205px -145px;
+}
+
+#github {
+  background: url(./img/ico.png) -388px -145px;
+}
+
+#whatsapp {
+  background: url(./img/ico.png) -575px -145px;
+}
+
+#instagram {
+  background: url(./img/ico.png) -755px -145px;
+}
