@@ -1,0 +1,646 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+  background-color: aquamarine;
+}
+
+.container {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+#translate {
+  background-color: lightcoral;
+  transform: translate(200px, 50px);
+}
+
+#translateX {
+  transform: translateX(900px);
+  background-color: wheat;
+}
+
+#translateY {
+  transform: translateY(300px);
+  background-color: violet;
+}
+
+#rotate {
+  background-color: lightgrey;
+  transform: rotate(60deg);
+}
+
+#counter-rotate {
+  background-color: lightblue;
+  transform: rotate(-30deg) translate(700px, 50px);
+}
+
+#scale {
+  /* changing the elements width and height */
+  /* transform: scale(x, y); */
+  transform: scale(1, 2) translate(1000px, -100px);
+  background-color: darkturquoise;
+}
+
+#scaleX {
+  transform: scaleX(2) translate(200px, -100px);
+  background-color: gray;
+}
+
+#scaleY {
+  transform: scaleY(3) translate(400px, -170px);
+  background-color: lightgreen;
+}
+
+#skew {
+  transform: skew(20deg, 10deg) translate(1000px, -500px);
+  background-color: lightpink;
+}
+
+#skewX {
+  transform: skewX(20deg) translate(300px, -300px);
+  background-color: yellow;
+}
+
+#skewY {
+  transform: skewY(10deg) translate(500px, -470px);
+  background-color: lightyellow;
+}
+
+#matrix {
+  /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+  transform: matrix(1, -0.3, 0, 1, 700, -900);
+  background-color: limegreen;
+}
+
+#origin-transform {
+  transform-origin: 50% 30%t;
+  transform: rotate(45deg) translate(-500px, -800px);
+  background-color: antiquewhite;
+}
+
+#rotateX,
+#rotateY,
+#rotateZ,
+#transform-style,
+#perspective,
+#perspective-origin,
+#backface-visibility {
+  display: inline-block;
+}
+
+#rotateX {
+  transform: rotateX(150deg);
+  background-color: lightseagreen;
+}
+
+#rotateY {
+  transform: rotateY(130deg);
+  background-color: rgb(143, 71, 185);
+}
+
+#rotateZ {
+  transform: rotateZ(90deg);
+  margin-top: 100px;
+  background-color: rgb(216, 154, 130);
+}
+
+#transform-style {
+  margin-top: 100px;
+  transform: rotateY(30deg);
+  transform-style: preserve-3d;
+  background-color: goldenrod;
+}
+
+#perspective {
+  perspective: 100px;
+  text-align: center;
+  background-color: red;
+}
+
+#perspective div {
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg);
+  background-color: lightsalmon;
+}
+
+#perspective-origin {
+  perspective: 150px;
+  perspective-origin: bottom left;
+  text-align: center;
+  background-color: darkgreen;
+}
+
+#perspective-origin div {
+  background-color: greenyellow;
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg);
+}
+
+.box1 {
+  transform: rotateY(180deg);
+}
+
+#backface-visibility {
+  backface-visibility: visible;
+  background-color: skyblue;
+}
+
+#css-transition .container div {
+  margin: 10px 0px;
+}
+
+#transition-1,
+#transition-3,
+#transition-4,
+#transition-5,
+#transition-6,
+#transition-7 {
+  width: 20%;
+  height: 50px;
+  background: greenyellow;
+  transition: width 10s;
+}
+
+#transition-1:hover,
+#transition-3:hover,
+#transition-4:hover,
+#transition-5:hover,
+#transition-6:hover,
+#transition-7:hover {
+  width: 100%;
+}
+
+#transition-2 {
+  width: 50px;
+  height: 50px;
+  background: lightseagreen;
+  transition: width 7s, height 7s;
+}
+
+#transition-2:hover {
+  width: 500px;
+  height: 500px;
+}
+
+#transition-3 {
+  transition-timing-function: linear;
+  background-color: coral;
+}
+#transition-4 {
+  transition-timing-function: ease;
+  background-color: rgb(176, 80, 255);
+}
+#transition-5 {
+  transition-timing-function: ease-in;
+  background-color: rgb(80, 229, 255);
+}
+#transition-6 {
+  transition-timing-function: ease-in-out;
+  background-color: rgb(255, 243, 80);
+}
+#transition-7 {
+  transition-timing-function: ease-in;
+  background-color: rgb(121, 255, 80);
+}
+
+#transition-8 {
+  width: 20%;
+  height: 50px;
+  background-color: darkturquoise;
+  transition: width 10s, height 3s;
+  transition-delay: 2s;
+}
+
+#transition-8:hover {
+  width: 100%;
+  height: 100px;
+}
+
+#transition-9 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(160, 0, 209);
+  transition: transform 3s;
+  transition-delay: 1s;
+}
+
+#transition-9:hover {
+  /* transform: rotate(360deg); */
+  transform: translateX(1300px);
+}
+
+#transition-12 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 66, 209);
+  transition: width 3s, transform 3s;
+}
+
+#transition-12:hover {
+  width: 500px;
+  transform: rotate(360deg);
+}
+
+#transition-10 {
+  width: 200px;
+  height: 50px;
+  background: red;
+  /* transition-property: width;
+  transition-duration: 2s; */
+  transition-property: width, height;
+  transition-duration: 2s, 3s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+#transition-10:hover {
+  width: 300px;
+  height: 300px;
+}
+
+#transition-11 {
+  width: 200px;
+  height: 50px;
+  background: lightblue;
+  /* transition: width 2s  linear 1s; */
+  transition: width 2s, height 3s linear 1s;
+}
+
+#transition-11:hover {
+  width: 300px;
+  height: 200px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+#css-animation {
+  height: 1000px;
+  width: 100%;
+}
+
+#css-animation div div {
+  margin: 10px;
+  display: inline-block;
+}
+
+.box1 {
+  background-color: rgb(47, 189, 123);
+  animation-name: ani1;
+  animation-duration: 10s;
+}
+
+@keyframes ani1 {
+  from {
+    background-color: rgb(47, 189, 123);
+  }
+  to {
+    background-color: rgb(165, 47, 189);
+  }
+}
+
+.box2 {
+  background-color: rgb(163, 189, 47);
+  animation-name: ani2;
+  animation-duration: 10s;
+  animation-delay: 5s;
+}
+
+@keyframes ani2 {
+  0% {
+    background-color: rgb(163, 189, 47);
+  }
+  25% {
+    background-color: rgb(47, 172, 189);
+  }
+  50% {
+    background-color: rgb(47, 57, 189);
+  }
+  100% {
+    background-color: rgb(189, 47, 118);
+  }
+}
+
+.box3 {
+  background-color: rgb(47, 189, 170);
+  position: relative;
+  animation-name: ani3;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-delay: 1s;
+}
+
+@keyframes ani3 {
+  0% {
+    background-color: rgb(47, 189, 170);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: rgb(85, 32, 134);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgb(76, 145, 27);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: rgb(155, 62, 25);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: rgb(158, 49, 191);
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.box4 {
+  background-color: rgb(47, 189, 170);
+  position: relative;
+  animation-name: ani4;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+}
+
+@keyframes ani4 {
+  0% {
+    background-color: rgb(163, 189, 47);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: rgb(83, 204, 133);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgb(62, 138, 173);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: rgb(242, 206, 128);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: rgb(127, 196, 135);
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.box5 {
+  background-color: rgb(165, 47, 189);
+  position: relative;
+  animation-name: ani5;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes ani5 {
+  0% {
+    background-color: rgb(165, 47, 189);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: rgb(95, 83, 204);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgb(138, 62, 173);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: rgb(242, 128, 191);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: rgb(196, 149, 127);
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.box6 {
+  background-color: rgb(60, 167, 87);
+  position: relative;
+  animation-name: ani6;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  /* make the animation run forwards first, then backwards */
+}
+
+@keyframes ani6 {
+  0% {
+    background-color: rgb(60, 167, 87);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: rgb(137, 204, 83);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgb(62, 173, 84);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: rgb(128, 234, 242);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: rgb(127, 128, 196);
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.box7 {
+  background-color: rgb(60, 167, 87);
+  position: relative;
+  animation-name: ani7;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate-reverse;
+  /* make the animation run backwards first, then forwards */
+}
+
+@keyframes ani7 {
+  0% {
+    background-color: rgb(60, 167, 87);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: rgb(137, 204, 83);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgb(62, 173, 84);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: rgb(128, 234, 242);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: rgb(127, 128, 196);
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.box8 {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(11, 131, 237);
+  position: relative;
+  position: relative;
+  animation: ani8 5s infinite;
+}
+
+@keyframes ani8 {
+  from {
+    background-color: rgb(11, 131, 237);
+    left: 0px;
+  }
+  to {
+    background-color: rgb(43, 186, 48);
+    left: 300px;
+  }
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.ease {
+  animation-timing-function: ease;
+}
+
+.ease-in {
+  animation-timing-function: ease-in;
+}
+
+.ease-out {
+  animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+.box9 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: rgb(66, 50, 167);
+}
+
+.none {
+  animation: none 2s 1 none;
+}
+
+@keyframes none {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+    background-color: rgb(228, 8, 191);
+  }
+}
+
+.forward {
+  animation: forward 2s 1;
+  animation-fill-mode: forward;
+}
+
+@keyframes forward {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+    background-color: rgb(228, 8, 191);
+  }
+}
+
+.box10 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: rgb(228, 8, 8);
+  animation: backward 2s 1;
+  animation-fill-mode: backward;
+}
+
+@keyframes backward {
+  from {
+    top: 0px;
+    background-color: rgb(0, 255, 115);
+  }
+  to {
+    top: 200px;
+  }
+}
+
+.box11 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(99, 129, 204);
+  position: relative;
+  animation-name: both;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes both {
+  from {
+    top: 0px;
+    background-color: rgb(8, 228, 8);
+  }
+  to {
+    top: 200px;
+    background-color: rgb(48, 8, 228);
+  }
+}

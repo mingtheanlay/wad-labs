@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lab 20</title>
+  </head>
+  <body>
+    <div id="2d-transform">
+      <h2 class="center">CSS 2D Transforms</h2>
+      <div class="container">
+        <div class="box" id="translate">
+          position to coordinate X to 200px and coordinate Y to 50px
+        </div>
+        <div class="box" id="translateX">position to coordinate X to 900px</div>
+        <div class="box" id="translateY">position to coordinate Y to 300px</div>
+        <div class="box" id="rotate">rotate 60 degree clockwise</div>
+        <div class="box" id="counter-rotate">
+          rotate 30 degrees counter-clockwise
+        </div>
+        <div class="box" id="scale">scale X axis to 2 and Y axis to 3</div>
+        <div class="box" id="scaleX">scale X axis to 2 of its size</div>
+        <div class="box" id="scaleY">scale Y axis to 3 of its size</div>
+        <div class="box" id="skew">
+          skew element 20 degrees along the X-axis, and 60 degrees along the
+          Y-axis
+        </div>
+        <div class="box" id="skewX">
+          skew element 20 degrees along the X-axis
+        </div>
+        <div class="box" id="skewY">
+          skew element 60 degrees along the Y-axis
+        </div>
+        <div class="box" id="matrix">
+          transform: matrix(1, -0.3, 0, 1, 700, -700); }
+        </div>
+        <div class="box" id="origin-transform">change anchor point</div>
+      </div>
+    </div>
+    <div id="3d-transform">
+      <h2 class="center">CSS 3D Transforms</h2>
+      <div class="container">
+        <div class="box" id="rotateX">rotate X-axis to 150 degrees</div>
+        <div class="box" id="rotateY">rotate Y-axis to 130 degrees</div>
+        <div class="box" id="rotateZ">rotate Z-axis to 90 degrees</div>
+        <div class="box" id="transform-style">
+          transform-style: preserve-3d;
+        </div>
+        <div class="box" id="perspective">
+          <div>perspective</div>
+        </div>
+        <div class="box" id="perspective-origin">
+          <div>perspective</div>
+        </div>
+        <div class="box box1" id="backface-visibility">
+          backface-visibility: visible;
+        </div>
+      </div>
+    </div>
+    <div id="css-transition">
+      <h2 class="center">CSS Transitions</h2>
+      <div class="container">
+        <div id="transition-2"></div>
+        <div id="transition-1"></div>
+        <div id="transition-3">transition-timing-function: linear;</div>
+        <div id="transition-4">transition-timing-function: ease;</div>
+        <div id="transition-5">transition-timing-function: ease-in;</div>
+        <div id="transition-6">transition-timing-function: ease-in-out;</div>
+        <div id="transition-7">transition-timing-function: ease-in;</div>
+        <div id="transition-8">delay: 2s;</div>
+        <div id="transition-9">Hover Me</div>
+        <div id="transition-12">Hover Me</div>
+        <div id="transition-10"></div>
+        <div id="transition-11"></div>
+      </div>
+    </div>
+    <div id="css-animation">
+      <h2 class="center">CSS Animation</h2>
+      <div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5">Reverse</div>
+        <div class="box box6">Alternate</div>
+        <div class="box box7">Alternate-Reverse</div>
+        <br />
+        <div class="box8 linear">Linear</div>
+        <br />
+        <div class="box8 ease">Ease</div>
+        <br />
+        <div class="box8 ease-in">Ease-In</div>
+        <br />
+        <div class="box8 ease-out">Ease-out</div>
+        <br />
+        <div class="box8 ease-in-out">Ease-in-out</div>
+        <br />
+        <div class="box9 none">none</div>
+        <div class="box9 forward">forward</div>
+        <div class="box10">backward</div>
+        <div class="box11">both</div>
+      </div>
+    </div>
+  </body>
+</html>
