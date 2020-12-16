@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Menu Bar</title>
+  </head>
+  <body>
+    <h1 class="center">MENU GENERATOR</h1>
+    <nav id="menu">
+      <input
+        type="checkbox"
+        id="responsive-menu"
+        onclick="updatemenu()"
+      /><label></label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a class="dropdown-arrow" href="#">Products</a>
+          <ul class="sub-menus">
+            <li><a href="#">Products Sub Menu 1</a></li>
+            <li><a href="#">Products Sub Menu 2</a></li>
+            <li><a href="#">Products Sub Menu 3</a></li>
+            <li><a href="#">Products Sub Menu 4</a></li>
+          </ul>
+        </li>
+        <li><a href="http://">About</a></li>
+        <li>
+          <a class="dropdown-arrow" href="#">Services</a>
+          <ul class="sub-menus">
+            <li><a href="#">Services Sub Menu 1</a></li>
+            <li><a href="#">Services Sub Menu 2</a></li>
+            <li><a href="#">Services Sub Menu 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <nav id="menu2">
+      <ul>
+        <li class="sub1"><a href="#">Home</a></li>
+        <li class="sub1">
+          <a href="#">Products</a>
+          <ul>
+            <li class="sub1">
+              <a href="#">Phone</a>
+              <ul>
+                <li class="sub2"><a href="#">Apple</a></li>
+                <li class="sub2"><a href="#">Samsung</a></li>
+                <li class="sub2"><a href="#">OnePlus</a></li>
+                <li class="sub2"><a href="#">Pixel</a></li>
+                <li class="sub2"><a href="#">Oppo</a></li>
+                <li class="sub2"><a href="#">RealMe</a></li>
+                <li class="sub2"><a href="#">Huawei</a></li>
+              </ul>
+            </li>
+            <li class="sub1">
+              <a href="#">Computer</a>
+              <ul>
+                <li class="sub2"><a href="#">MacBook</a></li>
+                <li class="sub2"><a href="#">Dell</a></li>
+                <li class="sub2"><a href="#">Asus</a></li>
+                <li class="sub2"><a href="#">Acer</a></li>
+              </ul>
+            </li>
+            <li class="sub1">
+              <a href="#">Headset</a>
+              <ul>
+                <li class="sub2"><a href="#">Airpods Pro</a></li>
+                <li class="sub2"><a href="#">Airpods Max</a></li>
+                <li class="sub2"><a href="#">Jaybird</a></li>
+                <li class="sub2"><a href="#">Samsung Galaxy Buds</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="sub1"><a href="#">About</a></li>
+        <li class="sub1">
+          <a href="#">Contact Us</a>
+          <ul>
+            <li class="sub1">
+              <a href="#">Our Facebook Page</a>
+            </li>
+            <li class="sub1">
+              <a href="#">Our Email</a>
+            </li>
+            <li class="sub1">
+              <a href="#">Our Phone Number</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
