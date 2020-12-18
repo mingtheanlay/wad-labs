@@ -176,30 +176,17 @@ body {
   position: relative;
 }
 
-#menu2 ul ul li {
-  display: none;
-}
-
 #menu2 ul .sub1 a:hover {
   color: #1e3c72;
   background-color: #f2f2f2;
   border-radius: 10px;
 }
 
-#menu2 ul .sub1:hover ul .sub1 {
-  color: #fff;
-  background: #444444;
-  display: block;
-  position: relative;
-  left: 300px;
-  top: -45px;
-}
-
-li.sub2 {
+#menu2 ul ul li {
   display: none;
 }
 
-#menu2 .sub1 ul li:hover .sub2 {
+#menu2 ul .sub1:hover ul .sub1 {
   color: #fff;
   background: #444444;
   display: block;
