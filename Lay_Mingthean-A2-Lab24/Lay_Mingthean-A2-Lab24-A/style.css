@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Khmer", cursive;
+  background-color: #f3e7e7;
+}
+
+h1 {
+  text-align: center;
+  margin: 15px;
+  font-size: 54px;
+}
+
+#container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.user-input {
+  margin: 20px 0;
+}
+
+.user-input *,
+.checkbox * {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.user-input p {
+  width: 35%;
+}
+
+.user-input input[type="text"] {
+  margin: 5px;
+  width: 50%;
+  border: 2px black solid;
+}
+
+.checkbox {
+  width: 140px;
+  margin: 0px auto;
+}
+
+.checkbox input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+.checkbox * {
+  margin: 0 5px;
+}
+
+.btn {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.btn button {
+  display: inline;
+  width: 45%;
+  font-size: 1.3rem;
+}
+
+.form {
+  width: 50%;
+  background-color: #9e7d74;
+  color: white;
+  margin: 20px auto;
+}
+
+.form div {
+  margin: 20px;
+  padding: 5px;
+}
+
+.form div * {
+  display: inline-block;
+}
+
+.form div span {
+  margin-left: 70px;
+  float: right;
+}
+
+table tr th,
+table tr td {
+  border: 2px white solid;
+  width: 500px;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+table tr td:nth-child(1) {
+  width: 30%;
+}
+
+table tr td:nth-child(2) {
+  text-align: right;
+}

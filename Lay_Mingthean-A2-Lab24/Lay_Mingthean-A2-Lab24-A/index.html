@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khmer&display=swap"
+      rel="stylesheet"
+    />
+    <title>Electricity Bill</title>
+  </head>
+  <body>
+    <header>
+      <h1>សូមស្វាគមន៍មកកាន់អគ្គីសនីកម្ពុជា</h1>
+    </header>
+    <div id="container">
+      <div class="user-input">
+        <p>លេខសំគាល់អតិថិជន:</p>
+        <input type="text" id="id" />
+      </div>
+      <div class="user-input">
+        <p>បរិមាណប្រើប្រាស់:</p>
+        <input type="text" id="amount" />
+        <span>KW/H</span>
+      </div>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" id="trash" name="trash" />
+      <label for="trash">ថ្លៃសំរាម</label>
+    </div>
+    <div class="btn">
+      <button onclick="Calculate()">គណនា</button>
+      <button id="clear" onclick="Reset()">លុបចោល</button>
+    </div>
+    <div class="form">
+      <div>
+        <p>លេខសំគាល់អតិថិជន:</p>
+        <span id="customer-id"></span>
+      </div>
+      <div>
+        <p>បរិមាណប្រើប្រាស់:</p>
+        <span id="amount-output"></span>
+      </div>
+      <div>
+        <p>សំរាម:</p>
+        <span id="trash-price"></span>
+      </div>
+      <div>
+        <p>ទឹកប្រាក់ត្រូវបង់:</p>
+        <span id="price"></span>
+      </div>
+      <table>
+        <tr>
+          <th>Amount</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>1 - 50kw</td>
+          <td id="a"></td>
+        </tr>
+        <tr>
+          <td>51 - 100kw</td>
+          <td id="b"></td>
+        </tr>
+        <tr>
+          <td>101 - 150kw</td>
+          <td id="c"></td>
+        </tr>
+        <tr>
+          <td>151 - 200kw</td>
+          <td id="d"></td>
+        </tr>
+        <tr>
+          <td>> 200kw</td>
+          <td id="e"></td>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
