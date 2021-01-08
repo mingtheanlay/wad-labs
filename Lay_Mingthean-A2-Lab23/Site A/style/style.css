@@ -105,6 +105,9 @@ header h1 {
 #landing-text button {
   height: 40px;
   width: 150px;
+  background-image: linear-gradient(#70a5eb, #557b8d);
+  border: 1px solid white;
+  color: white;
 }
 
 .shadow {
@@ -116,13 +119,13 @@ header h1 {
 
 #mission {
   width: 100%;
-  margin-top: 20px;
+  margin: 20px 0px;
 }
 
 .box {
   margin: 0px 20px;
   display: inline-block;
-  width: 30%;
+  width: 29%;
 }
 
 .box img {
@@ -131,4 +134,61 @@ header h1 {
 
 .box h2 {
   margin: 0;
+}
+
+.box button {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  color: white;
+  background-color: #f58205;
+  border: none;
+}
+
+#last {
+  margin: 20px 0;
+  width: 97%;
+}
+
+#last * {
+  display: inline-block;
+}
+
+#section1 {
+  width: 65%;
+  vertical-align: top;
+}
+
+#last h2,
+#testimonial {
+  margin: 20px 20px;
+  padding-bottom: 10px;
+}
+
+#testimonial * {
+  display: inline-block;
+}
+
+#testimonial img {
+  width: 40%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.quote {
+  width: 55%;
+  vertical-align: middle;
+}
+
+.dash {
+  border-bottom: dashed 2px rgb(105, 105, 105);
+}
+
+#section2 {
+  width: 30%;
+}
+
+#section2 h2 span img {
+  width: 25px;
+  vertical-align: middle;
 }
