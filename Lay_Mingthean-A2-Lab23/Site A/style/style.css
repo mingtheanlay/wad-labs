@@ -64,10 +64,8 @@ header h1 {
 }
 
 #main {
-  width: 100%;
-  padding: 500px auto;
   width: 97%;
-  margin: 0 auto;
+  margin: auto auto;
   transform: translate(0, -34px);
   border: 1px solid white;
   background-color: white;
@@ -78,7 +76,7 @@ header h1 {
 #landing-img {
   display: inline-block;
   width: 45%;
-  margin: 10px 20px;
+  margin: 0px 20px;
 }
 
 #title h1 {
@@ -95,7 +93,42 @@ header h1 {
   color: #4e4e4e;
 }
 
+#landing-text {
+  vertical-align: middle;
+}
+
 #landing-img * {
   width: 90%;
-  float: right;
+  vertical-align: middle;
+}
+
+#landing-text button {
+  height: 40px;
+  width: 150px;
+}
+
+.shadow {
+  height: 5px;
+  width: 95%;
+  margin: 10px auto;
+  box-shadow: 0 4px 2px -2px #888888;
+}
+
+#mission {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.box {
+  margin: 0px 20px;
+  display: inline-block;
+  width: 30%;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box h2 {
+  margin: 0;
 }

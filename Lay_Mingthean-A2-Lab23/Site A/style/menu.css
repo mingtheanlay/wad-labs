@@ -8,10 +8,9 @@
   color: #f2f2f2;
   text-align: center;
   padding: 5px 40px;
-  margin: 10px 0px;
+  margin: 10px auto;
   text-decoration: none;
   font-size: 17px;
-  width: 93.8px;
   border-left: white solid 1px;
 }
 .navMenu a.active {
@@ -45,6 +44,7 @@
   color: #ffffff;
   line-height: 1;
   text-align: center;
+  width: 7.5%;
 }
 .main_links:hover {
   background-color: #4b4949;
