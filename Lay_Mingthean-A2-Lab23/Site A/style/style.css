@@ -8,7 +8,7 @@
 }
 
 #container {
-  margin: 30px 100px;
+  margin: 0px 100px;
 }
 
 header {
@@ -198,4 +198,101 @@ header h1 {
 #section2 h2 span img {
   width: 25px;
   vertical-align: middle;
+}
+
+#section2 h2 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.news * {
+  margin: 3px 0;
+}
+
+.news h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.date {
+  text-decoration: underline;
+  color: #026aff;
+}
+
+#footer {
+  margin: 0 75px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+#footer-menu {
+  width: 60%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#footer-menu ul li,
+#footer-menu ul li a {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+}
+
+#footer-menu ul li {
+  border-right: 1px solid #4e4e4e;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#footer ul li:nth-child(8) {
+  border-right: none;
+}
+
+#license {
+  padding-left: 55px;
+}
+
+#license * {
+  display: inline;
+  margin: 0 5px;
+}
+
+#license p:nth-child(1) {
+  border-right: 1px solid #4e4e4e;
+}
+
+#social {
+  width: 35%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#social p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-logo {
+  width: 48px;
+  height: 48px;
+  margin: 0 3px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+#myspace {
+  background: url("../img/myspace.png");
+}
+
+#facebook {
+  background: url("../img/facebook.png");
+}
+
+#twitter {
+  background: url("../img/twitter.png");
+}
+
+#rss {
+  background: url("../img/rss.png");
 }
