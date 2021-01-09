@@ -38,12 +38,15 @@ header h1 {
 #login button {
   color: #ffffff;
   background-image: linear-gradient(#f39614, #ca721c);
-  width: 80px;
+  width: 100px;
+  height: 30px;
+  border: none;
 }
 
 #login input {
   font-size: 14px;
-  width: 200px;
+  width: 180px;
+  height: 25px;
 }
 
 #shape * {
@@ -180,7 +183,7 @@ header h1 {
 }
 
 .quote {
-  width: 60%;
+  width: 65%;
   vertical-align: middle;
 }
 
