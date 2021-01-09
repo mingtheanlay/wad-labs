@@ -130,6 +130,8 @@ header h1 {
 
 .box img {
   width: 100%;
+  border: white 10px solid;
+  box-shadow: 0 10px 10px -2px #888888;
 }
 
 .box h2 {
@@ -161,27 +163,29 @@ header h1 {
 
 #last h2,
 #testimonial {
-  margin: 20px 20px;
-  padding-bottom: 10px;
+  margin: 0px 20px;
 }
 
 #testimonial * {
   display: inline-block;
+  margin: 10px 0;
 }
 
 #testimonial img {
-  width: 40%;
+  width: 30%;
   vertical-align: middle;
   margin-right: 10px;
+  border: white 10px solid;
+  box-shadow: 0 0 10px #888888;
 }
 
 .quote {
-  width: 55%;
+  width: 60%;
   vertical-align: middle;
 }
 
 .dash {
-  border-bottom: dashed 2px rgb(105, 105, 105);
+  border-bottom: dashed 2px #888888;
 }
 
 #section2 {
