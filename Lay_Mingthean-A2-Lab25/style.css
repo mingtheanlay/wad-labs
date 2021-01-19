@@ -1,0 +1,39 @@
+body,
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  width: 100px;
+  height: 50px;
+  font-size: 1.3rem;
+}
+
+#left-panel,
+#right-panel {
+  display: inline-block;
+  vertical-align: middle;
+  height: 500px;
+}
+
+#left-panel {
+  width: 30%;
+}
+
+#right-panel {
+  width: 69%;
+}
+
+#right-panel * {
+  display: inline-block;
+  width: 10%;
+}
+
+#top,
+#bottom {
+  width: 0;
+  height: 100%;
+  word-wrap: break-word;
+  margin-bottom: 3rem;
+}
