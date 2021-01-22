@@ -378,3 +378,16 @@ small {
 ul {
   list-style-type: none;
 }
+
+.app-logo {
+  margin-top: 20px;
+}
+
+.app-logo img {
+  width: 140px;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #000;
+}
