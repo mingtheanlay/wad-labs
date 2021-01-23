@@ -377,6 +377,10 @@ small {
   text-align: center;
 }
 
+.logo a {
+  cursor: pointer;
+}
+
 ul {
   list-style-type: none;
 }
