@@ -13,19 +13,6 @@ body {
   background-color: rgba(14, 14, 14, 1);
 }
 
-.carousel-caption {
-  top: 200px;
-}
-
-.carousel-caption h1 {
-  font-size: 3rem;
-  font-weight: 1000;
-}
-
-.carousel-caption p {
-  font-size: 2rem;
-}
-
 .bg-orange {
   background-color: #f0644f;
   color: aliceblue;
@@ -55,6 +42,13 @@ body {
   height: 2px;
   background-color: lawngreen;
 }
+
+.item {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
 .underline-blue {
   width: 70px;
   height: 2px;
@@ -66,34 +60,33 @@ body {
   background-color: black;
 }
 
-.card-body {
-  text-align: center;
-}
-
 .blog .media img {
   max-width: 200px;
   height: auto;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
 }
 
 .bg-black {
   background-color: rgba(14, 14, 14, 1);
 }
 
-.carousel-caption {
-  top: 200px;
-}
-
 .fa-shopping-cart {
   margin-top: 5px;
 }
 
-.carousel-item {
-  height: auto;
-}
-
 .btn-success {
   background-color: royalblue;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .bg-orange {
@@ -148,4 +141,12 @@ body {
 .blog .media img {
   max-width: 200px;
   height: auto;
+}
+
+footer * {
+  color: #ffffff;
+}
+
+h5 {
+  font-weight: 600;
 }
