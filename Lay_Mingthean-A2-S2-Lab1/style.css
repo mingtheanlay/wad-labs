@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #673ab7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #512da8,
+    #673ab7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #512da8,
+    #673ab7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.container > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid #454545;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.container > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.container button.yellow {
+  background-color: rgba(249, 153, 38, 0.75);
+}
+
+.container button.yellow:hover {
+  background-color: rgba(249, 153, 38, 0.9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1/ -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.output .current {
+  color: rgba(255, 255, 255);
+  font-size: 2.5rem;
+}
