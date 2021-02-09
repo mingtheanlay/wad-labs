@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: khaki; /* fallback for old browsers */
+}
+
+.container {
+  max-width: 1366px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.row,
+.board {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 20px;
+}
+
+.row > img {
+  width: 150px;
+}
+
+.row {
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: minmax(0px, auto) repeat(2, 0px);
+}
+
+.board {
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: minmax(0px, auto) repeat(2, 0px);
+}
+
+.board > div {
+  display: grid;
+}
+
+.row > button {
+  width: 200px;
+}
+
+.user-info,
+.btn,
+.user-data {
+  margin-left: 1.2rem;
+}
+
+.user-info > button,
+.btn > button,
+.user-info > input[type="text"] {
+  font-size: 1.1rem;
+  padding: 5px 20px;
+}
+
+.user-info input[type="text"] {
+  width: 250px;
+}
+
+.user-data {
+  font-size: 1.2rem;
+}
+
+.user-info * {
+  margin-bottom: 0.9rem;
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin-bottom: 30px;
+}
+
+.board div input {
+  padding: 5px 10px;
+  font-size: 1.1rem;
+}
