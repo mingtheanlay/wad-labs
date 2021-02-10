@@ -10,49 +10,55 @@
   </head>
   <body>
     <div class="container">
+      <h1>KLA KLOUK</h1>
       <div class="row">
-        <img src="./img/1.png" alt="" first-slot />
-        <img src="./img/1.png" alt="" second-slot />
-        <img src="./img/1.png" alt="" third-slot />
+        <img src="" alt="" slot slot-one />
+        <img src="" alt="" slot slot-two />
+        <img src="" alt="" slot slot-three />
       </div>
       <div class="btn">
-        <button>Start</button>
+        <button button-start>Start</button>
+        <button button-clear>Clear</button>
         <button button-reset>Reset</button>
-        <button>Cancel</button>
       </div>
       <div class="board">
         <div>
           <img src="./img/1.png" alt="" />
-          <input type="text" data-tiger placeholder="Bet Now" />
+          <input type="text" data-tiger data id="1" placeholder="Bet Now" />
         </div>
         <div>
           <img src="./img/2.png" alt="" />
-          <input type="text" data-klouk placeholder="Bet Now" />
+          <input type="text" data-lobster data id="2" placeholder="Bet Now" />
         </div>
         <div>
           <img src="./img/3.png" alt="" />
-          <input type="text" data-lobster placeholder="Bet Now" />
+          <input type="text" data-klouk data id="3" placeholder="Bet Now" />
         </div>
         <div>
           <img src="./img/4.png" alt="" />
-          <input type="text" data-crab placeholder="Bet Now" />
+          <input type="text" data-crab data id="4" placeholder="Bet Now" />
         </div>
         <div>
           <img src="./img/5.png" alt="" />
-          <input type="text" data-roster placeholder="Bet Now" />
+          <input type="text" data-roster data id="5" placeholder="Bet Now" />
         </div>
         <div>
           <img src="./img/6.png" alt="" />
-          <input type="text" data-fish placeholder="Bet Now" />
+          <input type="text" data-fish data id="6" placeholder="Bet Now" />
         </div>
       </div>
     </div>
     <div class="user-info">
-      <input type="text" placeholder="What is your name?" data-input-username />
+      <input
+        type="text"
+        placeholder="What is your name?"
+        disabled
+        data-input-username
+      />
       <br />
-      <input type="text" placeholder="Insert coin!" data-input-coin />
+      <input type="text" placeholder="Insert coin!" disabled data-input-coin />
       <br />
-      <button type="submit" btn-submit>Submit</button>
+      <button type="submit" disabled btn-submit>Submit</button>
     </div>
     <div class="user-data">
       <h3>Coin: <span data-coin></span></h3>
