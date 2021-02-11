@@ -19,6 +19,7 @@ let slotThree = 1;
 let coin = 0;
 let username = null;
 let slot = [];
+let mon = 0;
 
 function bet() {
   betAmount.forEach((input) => {
@@ -60,6 +61,7 @@ function init() {
   }
   clearBet();
   slot = [];
+  mon = 0;
 }
 
 function clearBet() {
@@ -69,22 +71,33 @@ function clearBet() {
 }
 
 function random() {
+  betAmount.forEach((input) => {
+    if (input.value != "") {
+      mon += parseInt(input.value);
+    }
+  });
   if (username === null && coin === 0) {
     alert("Input name and insert coin");
     reset();
     return;
   } else {
-    slotOne = Math.floor(Math.random() * 6) + 1;
-    slot.push(slotOne);
-    slotTwo = Math.floor(Math.random() * 6) + 1;
-    slot.push(slotTwo);
-    slotThree = Math.floor(Math.random() * 6) + 1;
-    slot.push(slotThree);
-    displaySlotOne.src = "./img/" + slotOne + ".png";
-    displaySlotTwo.src = "./img/" + slotTwo + ".png";
-    displaySlotThree.src = "./img/" + slotThree + ".png";
-    bet();
-    init();
+    if (coin < mon) {
+      alert("Not enough coin");
+      init();
+      return;
+    } else {
+      slotOne = Math.floor(Math.random() * 6) + 1;
+      slot.push(slotOne);
+      slotTwo = Math.floor(Math.random() * 6) + 1;
+      slot.push(slotTwo);
+      slotThree = Math.floor(Math.random() * 6) + 1;
+      slot.push(slotThree);
+      displaySlotOne.src = "./img/" + slotOne + ".png";
+      displaySlotTwo.src = "./img/" + slotTwo + ".png";
+      displaySlotThree.src = "./img/" + slotThree + ".png";
+      bet();
+      init();
+    }
   }
 }
 
