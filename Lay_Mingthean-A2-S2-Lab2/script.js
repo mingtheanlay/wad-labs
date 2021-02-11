@@ -24,41 +24,27 @@ let slotOne = 1;
 let slotTwo = 1;
 let slotThree = 1;
 let coin = 0;
-let betMax = 0;
 let username = null;
 let prize = 0;
+let lost = 0;
 
 function bet() {
   slot.push(slotOne);
   slot.push(slotTwo);
   slot.push(slotThree);
-}
-
-function betCapacity() {
   betAmount.forEach((input) => {
-    input.addEventListener("change", () => {
-      if (betMax === 2) {
-        lock();
-        alert("You can input only 3");
-        betMax = 0;
+    if (slot.includes(parseInt(input.getAttribute("id")))) {
+      prize = prize + parseInt(input.value);
+      console.log(prize);
+    } else {
+      if (input.value == "") {
       } else {
-        betMax++;
+        let val = parseInt(input.value);
+        console.log(val);
+        lost = lost - val;
       }
-    });
+    }
   });
-}
-
-function lock() {
-  betAmount.forEach((input) => {
-    input.setAttribute("disabled", "disabled");
-  });
-}
-
-function unlock() {
-  betAmount.forEach((input) => {
-    input.removeAttribute("disabled");
-  });
-  clearBet();
 }
 
 function reset() {
@@ -83,9 +69,8 @@ function init() {
     inputUsername.setAttribute("disabled", "disabled");
     buttonSubmit.setAttribute("disabled", "disabled");
   }
-  unlock();
   prize = 0;
-  slot = [];
+  // slot = [];
 }
 
 function clearBet() {
@@ -137,4 +122,3 @@ buttonRest.addEventListener("click", () => {
 });
 
 init();
-betCapacity();
