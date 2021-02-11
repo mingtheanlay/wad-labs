@@ -10,38 +10,28 @@ const buttonStart = document.querySelector("[button-start]");
 const displaySlotOne = document.querySelector("[slot-one]");
 const displaySlotTwo = document.querySelector("[slot-two]");
 const displaySlotThree = document.querySelector("[slot-three]");
-const betTiger = document.querySelector("[data-tiger]");
-const betLobster = document.querySelector("[data-lobster]");
-const betKlouk = document.querySelector("[data-klouk]");
-const betCrab = document.querySelector("[data-crab]");
-const betRoster = document.querySelector("[data-roster]");
-const betFish = document.querySelector("[data-fish]");
 const buttonClear = document.querySelector("[button-clear]");
 const betAmount = document.querySelectorAll("[data]");
 
-let slot = [];
 let slotOne = 1;
 let slotTwo = 1;
 let slotThree = 1;
 let coin = 0;
 let username = null;
-let prize = 0;
-let lost = 0;
+let slot = [];
 
 function bet() {
-  slot.push(slotOne);
-  slot.push(slotTwo);
-  slot.push(slotThree);
   betAmount.forEach((input) => {
-    if (slot.includes(parseInt(input.getAttribute("id")))) {
-      prize = prize + parseInt(input.value);
-      console.log(prize);
-    } else {
-      if (input.value == "") {
+    if (input.value != "") {
+      if (slot.includes(parseInt(input.getAttribute("id")))) {
+        coin = coin + parseInt(input.value);
       } else {
-        let val = parseInt(input.value);
-        console.log(val);
-        lost = lost - val;
+        if (input.value === "") {
+          coin = coin;
+        } else if (input.value != "") {
+          coin = coin - parseInt(input.value);
+          input.value = "";
+        }
       }
     }
   });
@@ -54,7 +44,6 @@ function reset() {
   });
   coin = 0;
   username = null;
-  slot = [];
 }
 
 function init() {
@@ -69,8 +58,8 @@ function init() {
     inputUsername.setAttribute("disabled", "disabled");
     buttonSubmit.setAttribute("disabled", "disabled");
   }
-  prize = 0;
-  // slot = [];
+  clearBet();
+  slot = [];
 }
 
 function clearBet() {
@@ -86,8 +75,11 @@ function random() {
     return;
   } else {
     slotOne = Math.floor(Math.random() * 6) + 1;
+    slot.push(slotOne);
     slotTwo = Math.floor(Math.random() * 6) + 1;
+    slot.push(slotTwo);
     slotThree = Math.floor(Math.random() * 6) + 1;
+    slot.push(slotThree);
     displaySlotOne.src = "./img/" + slotOne + ".png";
     displaySlotTwo.src = "./img/" + slotTwo + ".png";
     displaySlotThree.src = "./img/" + slotThree + ".png";
