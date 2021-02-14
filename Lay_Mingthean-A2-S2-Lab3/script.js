@@ -35,16 +35,16 @@ function dateString(dateOfWeek, dateOfMonth, months, years) {
 
   switch (dateOfMonth % 10) {
     case 1:
-      dateOfMonthString = dateOfMonthString + "st";
+      dateOfMonthString = dateOfMonthString + "<sup>st</sup>";
       break;
     case 2:
-      dateOfMonthString = dateOfMonthString + "nd";
+      dateOfMonthString = dateOfMonthString + "<sup>nd</sup>";
       break;
     case 3:
-      dateOfMonthString = dateOfMonthString + "rd";
+      dateOfMonthString = dateOfMonthString + "<sup>rd</sup>";
       break;
     default:
-      dateOfMonthString = dateOfMonthString + "th";
+      dateOfMonthString = dateOfMonthString + "<sup>th</sup>";
       break;
   }
 
