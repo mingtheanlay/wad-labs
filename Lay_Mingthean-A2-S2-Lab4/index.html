@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model (DOM)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>JavaScript HTML DOM</h1>
+    <h2>I. Intoruduction to JavaScript DOM</h2>
+    <p>
+      The Document Object Model (DOM) is a programming interface for HTML and
+      XML documents. It represents the page so that programs can change the
+      document structure, style, and content. The DOM is an object-oriented
+      representation of the web page, which can be modified with a scripting
+      language such as JavaScript.
+    </p>
+    <img src="./img/pic_htmltree.gif" alt="" class="center" />
+    <h2>II. DOM Methods</h2>
+    <p>
+      HTML DOM methods are actions you can perform (on HTML Elements). HTML DOM
+      properties are values (of HTML Elements) that you can set or change. The
+      HTML DOM can be accessed with JavaScript (and with other programming
+      languages). In the DOM, all HTML elements are defined as objects. The
+      programming interface is the properties and methods of each object. A
+      property is a value that you can get or set (like changing the content of
+      an HTML element). A method is an action you can do (like add or deleting
+      an HTML element).
+    </p>
+    <h2>III. DOM Document</h2>
+    <p>
+      The HTML DOM document object is the owner of all other objects in your web
+      page. The document object represents your web page. If you want to access
+      any element in an HTML page, you always start with accessing the document
+      object. Below are some examples of how you can use the document object to
+      access and manipulate HTML.
+    </p>
+    <h3>Finding Element</h3>
+    <p id="exampleSelectById"></p>
+    <p class="example">document.getElementsByClassName("example");</p>
+    <p>document.getElementsByClassName("example");</p>
+    <button onclick="TagElement()">Try it</button>
+    <button onclick="createNew()">Create Element</button>
+    <button id="append">Append Child</button>
+
+    <div id="append-child">AppendChild</div>
+    <p>Click the button to replace the first item in the the list.</p>
+    <button onclick="ReplaceChild()">Try it</button><br /><br />
+    <img src="images/FindingHTMLObject.png" /> <br /><br />
+
+    <a name="html">HTML Tutorial</a><br />
+    <a name="css">CSS Tutorial</a><br />
+    <a name="xml">XML Tutorial</a><br />
+    <p>Click the button to display the number of anchors in the document.</p>
+    <button onclick="AnchorCollection()">Try it</button>
+    <p id="demo"></p>
+
+    <p>Click the button to display the base URI of the document.</p>
+    <button onclick="BaseUrl()">Try it</button>
+    <p>
+      <strong>Note:</strong> The baseURI property is not supported in Internet
+      Explorer.
+    </p>
+    <p id="baseurl"></p>
+
+    <p>Click the button to change the background color of the document.</p>
+    <button onclick="ChangeBackgroundColor()">Try it</button>
+
+    <p>Click the button to display the node name of the documentElement.</p>
+    <button onclick="DocumentElement()">Try it</button>
+    <p id="DE"></p>
+
+    <p>Click the button to display the location of this document</p>
+    <p>
+      <strong>Note:</strong> Internet Explorer does not support the documentURI
+      property.
+    </p>
+    <button onclick="DocumentUrl()">Try it</button>
+    <p id="DU"></p>
+
+    <p>
+      Click the button to display the domain name of the server that loaded this
+      document.
+    </p>
+    <button onclick="FindDomain()">Try it</button>
+    <p id="domain"></p>
+
+    <embed src="helloworld.swf" />
+    <embed src="helloworld.swf" />
+    <p>
+      Click the button to display the number of embed elements there are in this
+      document.
+    </p>
+    <button onclick="myEmbed()">Try it</button>
+    <p id="embed"></p>
+
+    <form>
+      First Name: <input type="text" name="fname" value="Ly" /><br />
+      Last Name: <input type="text" name="lname" value="Suhaita" />
+    </form>
+
+    <h3>Show Form Length</h3>
+    <p>
+      Click the button to display the number of form elements in the document.
+    </p>
+    <button onclick="FormLength()">Try it</button>
+    <p id="formlength"></p>
+
+    <h3>Show Head Title</h3>
+    <p>
+      Click the button to display the id of the head element in the document.
+    </p>
+    <button onclick="FindHeadID()">Try it</button>
+    <p id="headID"></p>
+
+    <h3>Show Impletment</h3>
+    <p>
+      Click the button to check if this document has the feature HTML DOM 1.0
+    </p>
+    <button onclick="Implement()">Try it</button>
+    <p id="implement"></p>
+
+    <h3>Show ReadyState</h3>
+    <p>
+      Click the button to display the loading status of the current document.
+    </p>
+    <button onclick="ReadyState()">Try it</button>
+    <p id="ready"></p>
+
+    <h3>Show Referer</h3>
+    <p>Click Button below to show referer of domain</p>
+    <p id="referer"></p>
+    <button onclick="Referer()">Try it</button>
+
+    <h3>Show Script</h3>
+    <script>
+      document.write("Hello World!");
+    </script>
+    <p>
+      Click the button to display the number of script elements in the document.
+    </p>
+    <button onclick="myScript()">Try it</button>
+    <p id="script"></p>
+
+    <h3>Show Title</h3>
+    <p>Click the button to display the title of the document.</p>
+    <button onclick="showTitle()">Try it</button>
+    <p id="title"></p>
+
+    <h2>Finding HTML Elements Using document.forms</h2>
+    <form id="frm1" action="/action_page.php">
+      First name: <input type="text" name="fname" value="James" /><br />
+      Last name:
+      <input type="text" name="lname" value="Rodriguez" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>Click "Click Here" to display the value of each element in the form.</p>
+    <button onclick="FindHtmlElement()">Click Here!</button>
+
+    <p id="htmlelement"></p>
+
+    <p><button onclick="Move()">Click Me</button></p>
+    <div id="container">
+      <div id="animate"></div>
+    </div>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
