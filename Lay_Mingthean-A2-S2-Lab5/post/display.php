@@ -66,7 +66,7 @@
       <?php
       if ($s1 == "first_session") {
         echo "ម៉េាងទី១";
-      } else if ($s1 == "second_session") {
+      } else if ($s2 == "second_session") {
         echo "ម៉េាងទី២";
       }
       ?>
@@ -101,9 +101,9 @@
       <tr>
         <td width="40%" align="center">បានឃើញនិងឯកភាព</td>
         <td width="40%" align="center">
-          ធ្វើនៅភ្នំពេញថ្ងៃទី
+          ធ្វើនៅភ្នំពេញ<br>
+          ថ្ងៃទី 
           <?php echo $done_in_day; ?>
-          </p>
           ខែ
           <?php echo $done_in_month; ?>
           ឆ្នាំ
