@@ -1,41 +1,46 @@
 <?php
-$currentDirectory = getcwd();
-$uploadDirectory = "/gallery/";
-
-$errors = []; // Store errors here
-
-$fileExtensionsAllowed = ['jpeg', 'jpg', 'png']; // These will be the only file extensions allowed 
-
-$fileName = $_FILES['the_file']['name'];
-$fileSize = $_FILES['the_file']['size'];
-$fileTmpName  = $_FILES['the_file']['tmp_name'];
-$fileType = $_FILES['the_file']['type'];
-$fileExtension = strtolower(end(explode('.', $fileName)));
-
-$uploadPath = $currentDirectory . $uploadDirectory . basename($fileName);
-
 if (isset($_POST['submit'])) {
+    $countfiles = count($_FILES['files']['name']);
+    $upload_dir = 'gallery' . DIRECTORY_SEPARATOR;
+    $allowed_types = array('jpg', 'png', 'jpeg', 'gif');
+    $maxsize = 5 * 1024 * 1024;
+    if (!empty(array_filter($_FILES['files']['name']))) {
+        for ($i = 0; $i < $countfiles; $i++) {
+            echo $i . "/" . $countfiles;
+            $filename = $_FILES['files']['name'][$i];
+            $file_tmpname = $_FILES['files']['tmp_name'][$i];
+            $file_name = $_FILES['files']['name'][$i];
+            $file_size = $_FILES['files']['size'][$i];
 
-    if (!in_array($fileExtension, $fileExtensionsAllowed)) {
-        $errors[] = "This file extension is not allowed. Please upload a JPEG or PNG file";
-    }
+            $file_ext = pathinfo($file_name, PATHINFO_EXTENSION);
+            $filepath = $upload_dir . $file_name;
+            if (in_array(strtolower($file_ext), $allowed_types)) {
+                if ($file_size >= $maxsize)
+                    echo "Error: File size is larger than limit.";
 
-    if ($fileSize > 5000000) {
-        $errors[] = "File exceeds maximum size (5MB)";
-    }
+                if (file_exists($filepath)) {
+                    $filepath = $upload_dir . $file_name;
 
-    if (empty($errors)) {
-        $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
+                    if (move_uploaded_file($file_tmpname, $filepath)) {
+                        echo " {$file_name} successfully uploaded <br />";
+                    } else {
+                        echo "Error uploading {$file_name} <br />";
+                    }
+                } else {
 
-        if ($didUpload) {
-            echo "The file " . basename($fileName) . " has been uploaded";
-        } else {
-            echo "An error occurred. Please contact the administrator.";
+                    if (move_uploaded_file($file_tmpname, $filepath)) {
+                        echo " {$file_name}  successfully uploaded <br />";
+                    } else {
+                        echo "Error uploading {$file_name} <br />";
+                    }
+                }
+            } else {
+                echo "Error uploading {$file_name} ";
+                echo "({$file_ext} file type is not allowed)<br / >";
+            }
         }
     } else {
-        foreach ($errors as $error) {
-            echo $error . "These are the errors" . "\n";
-        }
+        echo "No files selected.";
     }
 }
 

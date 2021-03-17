@@ -33,22 +33,14 @@ $images = glob($dir . "*.{jpg,jpeg,gif,png,bmp,webp,avi,mp4}", GLOB_BRACE);
             printf("<img src='gallery/%s'/>", $img);
         }
         ?>
-
-
-
         <form action="upload.php" method="post" enctype="multipart/form-data" class="container">
             <div class="mb-3">
                 <label for="formFile" class="form-label">Choose your picture to upload</label>
-                <input class="form-control" type="file" name="the_file" id="fileToUpload" id="file-input"
-                    onchange="previewFile(this);" multiple required>
-                <div id=" thumb-output">
-                </div>
+                <input class="form-control" type="file" name="files[]" id="files" multiple required>
             </div>
-            <img id="previewImg" src="">
-            <br>
-            <button type="submit" class="btn btn-primary" name="submit" value="Start Upload">Upload Files</button>
+            <button type="submit" class="btn btn-primary" name="submit" value="Upload">Upload Files</button>
         </form>
     </div>
-
+</body>
 
 </html>

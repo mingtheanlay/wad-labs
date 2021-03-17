@@ -12,13 +12,15 @@
 }
 
 @media screen and (max-width: 850px) {
-  #gallery img {
+  #gallery img,
+  #image_preview img {
     width: 33%;
   }
 }
 
 @media screen and (max-width: 640px) {
-  #gallery img {
+  #gallery img,
+  #image_preview img {
     width: 50%;
   }
 }
@@ -51,4 +53,14 @@
 #lbInner img {
   max-width: 80vw;
   max-height: 80vh;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+.imageThumb {
+  max-height: 75px;
+  margin: 10px 10px 0 0;
+  padding: 1px;
 }
