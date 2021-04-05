@@ -7,7 +7,7 @@ $stu_name = "";
 $stu_sex = "";
 $stu_score = 0;
 
-$url = "./index.php";
+$url = "./index-function.php";
 
 include './function/crub.php';
 
